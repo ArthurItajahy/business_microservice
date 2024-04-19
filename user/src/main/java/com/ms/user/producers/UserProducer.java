@@ -16,7 +16,7 @@ public class UserProducer {
 
     }
 
-    @Value(value == "${broker.queue.email.name}")
+    @Value(value = "${broker.queue.email.name}")
     private String routingKey;
 
     public void publishMessageEmail(UserModel userModel){
